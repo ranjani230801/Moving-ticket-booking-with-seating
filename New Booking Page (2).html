@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Management System</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+    <main>
+        <center><h1><i><u>Book Your Seat!!!</h1></i></u>
+                    <select class="select">
+                        <option disabled selected id="options" value="cinemas">Cinemas</option>
+                            <option value="one">Fantastic Beasts</option>
+                            <option value="two">RRR</option>
+                            <option value="three">Kahani 2</option>
+                            <option value="four">KGF 2</option>
+                            <option value="four">Monster House</option>
+                            <option value="four">Halloween</option>
+                            <option value="four">Inception</option>
+                    </select>
+                    <select class="select">
+                        <option disabled selected value="timings">Timings</option>
+                            <option value="one">09:00 AM</option>
+                            <option value="two">12:30 PM</option>
+                            <option value="three">04:00 PM</option>
+                            <option value="four">07:30 PM</option>
+                            <option value="four">11:00 PM</option>
+                    </select>
+                         <div class="search-filter">
+		<label for="search">Search by Title:</label>
+		<input type="textbox" id="search" onkeyup="searchMovies()" placeholder="Enter movie title">
+	        </div>
+                     <select class="filter">
+		         <label for="filter">Filter by Genre:</label>
+		        <option disabled selected id="options" value="All">Filter by Genere:</option>
+                         <option value="">All</option>
+			<option value="action">Action</option>
+			<option value="comedy">Comedy</option>
+			<option value="drama">Drama</option>
+			<option value="horror">Horror</option>
+		</select>
+	</div>
+
+                    <h2>Select your preferred choices above and click proceed</h2>
+                    <button class=" button select "><a class="pagelink" href="seat.html">Proceed</a> </button>
+                    
+                </div>
+            </div>
+            
+            <div class="movie-display">
+                <h1 id="movies">Available Movies</h1>
+
+                    <div class="movie-box-wrapper">
+                        <div class="movie-list" >
+                            <div class="movie-card" onclick="displayButton(), cardDesc1()">
+                                <img class="movie-card-img" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/85b2972c580d07fbffaf528d16cca6d7078069bdee1032f786b07049a1c54853._RI_TTW_.jpg" alt="">
+                                <span class="movie-card-title">Fantastic Beasts</span>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=DGhq0Kx8dzQ';" >Watch Trailer</button>
+                                <span class="card-up-text">Fantasy</span>
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc2()">
+                                <img class="movie-card-img" src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY1200_CR135,0,630,1200_AL_.jpg" alt="">
+                                <span class="movie-card-title">RRR</span>
+                                 <p class="movie-card-desc">The two main heroes in this are almost superheroes, which arguably makes RRR the best superhero film in years.</p>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=GY4BgdUSpbE';">Watch Trailer</button>
+                                <span class="card-bottom-text">RRR</span>
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc3()">
+                                <img class="movie-card-img" src="https://m.media-amazon.com/images/I/A1wUDvKYPGL._RI_.jpg" alt="">
+                                <span class="movie-card-title">Kahani 2</span>
+                                <p class="movie-card-desc">A woman with a mysterious past is charged with kidnapping and murder.</p>
+                                <button class="movie-card-button " onclick="window.location.href='https://www.youtube.com/watch?v=Ez4mXaeSKuk';">Watch Trailer</button>
+                                <span class="card-bottom-text">KAHANI 2</span>
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc4()">
+                                <img class="movie-card-img" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f5a21f64af7359f7aaa7c29dee8a12a97630e707cdbf71e0ae6b063322fb8575._RI_V_TTW_.jpg" alt="">
+                                <span class="movie-card-title">KGF 2</span>
+                                <p class="movie-card-desc">In the blood-soaked Kolar Gold Fields, Rocky's name strikes fear into his foes. While his allies look up to him, the government sees him as a threat to law and order. Rocky must battle threats from all sides for unchallenged supremacy.</p>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=JKa05nyUmuQ';">Watch Trailer</button>
+                                <span class="card-bottom-text">KGF2</span>
+                                
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc5()">
+                                <img class="movie-card-img" src="https://m.media-amazon.com/images/I/41MYpgzSVjL._SX342_SY445_QL70_ML2_.jpg" alt="">
+                                <span class="movie-card-title">Monster House</span>
+                                <p class="movie-card-desc">"Monster House" is an animated comedy with horror elements, and it turns a bit too dark in its final third but is still fun — and certainly more original than most films aimed at kids.</p>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=Iru7Q2qmijQ';">Watch Trailer</button>
+                                <span class="card-bottom-text">MONSTER HOUSE</span>
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc6()">
+                                <img class="movie-card-img" src="https://upload.wikimedia.org/wikipedia/en/d/d4/The_Kashmir_Files_poster.jpg" alt="">
+                                <span class="movie-card-title">The Kashmir Files</span>
+                                <p class="movie-card-desc">The film presents a fictional storyline centred around an exodus of Kashmiri Hindus in the disputed region of Kashmir. It depicts the early-1990 exodus to be a genocide, a notion that is widely considered inaccurate and associated with conspiracy theories.</p>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=A179apttY58&t=8s';">Watch Trailer</button>
+                                <span class="card-bottom-text">THE KASHMIR FILES </span>
+                                
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc7()">
+                                <img class="movie-card-img" src="https://m.media-amazon.com/images/M/MV5BNzk1OGU2NmMtNTdhZC00NjdlLWE5YTMtZTQ0MGExZTQzOGQyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="">
+                                <span class="movie-card-title">Halloween</span>
+                                <p class="movie-card-desc">Jamie Lee Curtis returns to her iconic role as Laurie Strode, who comes to her final confrontation with Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.</p>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=ek1ePFp-nBI';">Watch Trailer</button>
+                                <span class="card-bottom-text">HALLOWEEN</span>
+                            </div>
+                            <div class="movie-card" onclick="displayButton(), cardDesc8()">
+                                <img class="movie-card-img" src="https://i.ytimg.com/vi/herRuccntNE/movieposter_en.jpg" alt="">
+                                <span class="movie-card-title">Inception</span>
+                                <p class="movie-card-desc">A science fiction action film based on professional thief who steals information by infiltrating the subconscious of his targets.</p>
+                                <button class="movie-card-button" onclick="window.location.href='https://www.youtube.com/watch?v=YoHD9XEInc0';">Watch Trailer</button>
+                                <span class="card-bottom-text"> INCEPTION</span>
+                            </div>
+                        </div>
+                        
+                        <div class="content-onclick " >
+                            <p id="movie-content">
+                                Click on any movie to book your tickets now!
+                            </p>
+                            <button class="btn" id="book-button"><a class="pagelink" href="seat.html">Book Now</a> </button>
+                        </div>
+
+                    </div>
+
+            </div>
+        </section>
+
+    </main>
+
+   <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
